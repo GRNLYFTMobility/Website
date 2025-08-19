@@ -33,15 +33,15 @@ export default function Hero() {
 
       {/* Content */}
       <div className="container mx-auto px-6 z-20 pt-24 pb-12 md:py-32">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-4 md:mt-6">
           <div className={`transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
+            <h1 className={`text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
               Transforming Business Transportation
               <br />
               <span className="text-green-600 bg-clip-text">With Sustainable Solutions</span>
             </h1>
             
-            <p className={`text-xl mb-10 max-w-xl ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+            <p className={`text-lg md:text-xl mb-10 max-w-xl ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
               Elevate your business with our zero-emission fleet services. 
               Efficient, eco-friendly transportation that reduces your carbon footprint 
               while enhancing your brand image.
