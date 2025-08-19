@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useTheme } from '@/context/ThemeContext';
 import { useForm } from '@formspree/react';
 import toast from 'react-hot-toast';
+import { Loader } from 'lucide-react';
 
 export default function Contact() {
   const [isVisible, setIsVisible] = useState(false);
@@ -209,7 +210,8 @@ export default function Contact() {
                     className={`w-full py-3 px-6 rounded-md bg-green-600 text-white font-medium transition-all 
                     ${state.submitting ? 'opacity-70 cursor-not-allowed' : 'hover:bg-green-700'}`}
                   >
-                    {state.submitting ? 'Sending...' : 'Send Message'}
+                    {state.submitting ? 'Sending' : 'Send Message'}
+                    {state.submitting && <Loader className="size-4 shrink-0 animate-spin" />}
                   </button>
                 </form>
               </div>

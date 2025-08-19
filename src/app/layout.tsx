@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   category: 'Transportation',
   icons: {
     icon: [
-      { url: '/favicon.svg' },
+      { url: '/favicon.ico' },
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
@@ -130,7 +130,7 @@ export default function RootLayout({
         />
         <script src="/register-sw.js" async></script>
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}>
         <ThemeProvider>
           <Toaster position="bottom-right" reverseOrder={false} />
           {children}
