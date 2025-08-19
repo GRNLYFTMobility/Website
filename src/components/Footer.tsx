@@ -175,13 +175,13 @@ export default function Footer() {
                 &copy; {currentYear} GrnLYFT. All rights reserved.
               </p>
               <div className="flex space-x-6 text-sm">
-                <a href="#" className="hover:text-green-600 transition-colors">
+                <a href="/privacy-policy" className="hover:text-green-600 transition-colors">
                   Privacy Policy
                 </a>
-                <a href="#" className="hover:text-green-600 transition-colors">
+                <a href="/terms-conditions" className="hover:text-green-600 transition-colors">
                   Terms of Service
                 </a>
-                <a href="#" className="hover:text-green-600 transition-colors">
+                <a href="/cookies-policy" className="hover:text-green-600 transition-colors">
                   Cookie Policy
                 </a>
               </div>

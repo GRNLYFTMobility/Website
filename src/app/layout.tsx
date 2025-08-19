@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/context/ThemeContext';
 import { Toaster } from 'react-hot-toast';
+import CookieConsent from '@/components/Cookie';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
   category: 'Transportation',
   icons: {
     icon: [
-      { url: '/favicon.svg' },
+      { url: '/favicon.ico' },
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
@@ -75,7 +76,7 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   verification: {
-    google: 'google-site-verification-code', // Replace with actual verification code when available
+    google: 'google-site-verification-code',
   },
 };
 
@@ -130,10 +131,12 @@ export default function RootLayout({
         />
         <script src="/register-sw.js" async></script>
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}>
         <ThemeProvider>
           <Toaster position="bottom-right" reverseOrder={false} />
           {children}
+          {/* Render globally so it appears across pages; it self-hides if cookie exists */}
+          <CookieConsent />
         </ThemeProvider>
       </body>
     </html>
