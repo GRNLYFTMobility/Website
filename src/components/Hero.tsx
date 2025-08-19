@@ -33,7 +33,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className="container mx-auto px-6 z-20 pt-24 pb-12 md:py-32">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-4 md:mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mt-2 md:mt-6">
           <div className={`transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <h1 className={`text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
               Transforming Business Transportation

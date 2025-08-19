@@ -106,7 +106,7 @@ export default function Testimonials() {
             {/* Navigation Buttons */}
             <button
               onClick={goToPrevious}
-              className={`absolute left-0 top-1/2 transform -translate-y-1/2 z-20 p-3 rounded-full transition-all duration-300 ${
+              className={`absolute   left-0 top-1/2 transform -translate-y-1/2 z-20 p-1 md:p-3 rounded-full transition-all duration-300 ${
                 isDarkMode
                   ? 'bg-gray-800 text-white hover:bg-gray-700'
                   : 'bg-white text-gray-800 hover:bg-gray-50'
@@ -131,7 +131,7 @@ export default function Testimonials() {
 
             <button
               onClick={goToNext}
-              className={`absolute right-0 top-1/2 transform -translate-y-1/2 z-20 p-3 rounded-full transition-all duration-300 ${
+              className={`absolute  right-0 top-1/2 transform -translate-y-1/2 z-20 p-1 md:p-3 rounded-full transition-all duration-300 ${
                 isDarkMode
                   ? 'bg-gray-800 text-white hover:bg-gray-700'
                   : 'bg-white text-gray-800 hover:bg-gray-50'
@@ -156,11 +156,11 @@ export default function Testimonials() {
 
             {/* Testimonials Container */}
             <div
-              className={`relative max-w-4xl mx-auto px-16 md:px-20 ${
+              className={`relative w-full md:max-w-4xl mx-auto px-4 md:px-16 lg:px-20 ${
                 isVisible ? 'opacity-100' : 'opacity-0'
               } transition-opacity duration-1000`}
             >
-              <div className="relative h-80 md:h-72">
+              <div className="relative h-80 md:h-72 w-full">
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={index}
@@ -173,9 +173,9 @@ export default function Testimonials() {
                     }`}
                     style={{ transitionDelay: index === activeIndex ? '200ms' : '0ms' }}
                   >
-                    <div className="relative z-10 bg-opacity-90 rounded-lg p-8">
+                    <div className="relative z-10 bg-opacity-90 rounded-lg p-2 md:p-8">
                       <p
-                        className={`text-xl md:text-2xl italic mb-8 leading-relaxed ${
+                        className={`text-[16px] md:text-2xl italic mb-8 leading-relaxed ${
                           isDarkMode ? 'text-gray-200' : 'text-gray-700'
                         }`}
                       >
