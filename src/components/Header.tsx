@@ -107,7 +107,7 @@ export default function Header() {
               alt="GrnLYFT Logo - Sustainable B2B EV Transportation Solutions" 
               width={800} 
               height={220} 
-              className="h-28 w-auto md:h-40 object-contain"
+              className="h-16 w-auto md:h-24 object-contain"
               priority
               quality={100}
             />
